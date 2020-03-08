@@ -27,6 +27,9 @@ a {
   display: flex;
   align-items: center;
 }
+.navbar_logo_name {
+  display: none;
+}
 .navbar_menu {
   display: flex;
   list-style: none;
@@ -35,6 +38,7 @@ a {
 .navbar_menu li {
   padding: 6px 3vw;
   font-size: 20px;
+  font-weight: 600;
 }
 .navbar_menu li:hover {
   background-color: #d49466;
@@ -54,8 +58,8 @@ a {
 .navbar_togleBtn {
   position: absolute;
   right: 26px;
-  top: 14px;
-  font-size: 24px;
+  top: 25px;
+  font-size: 28px;
   color: #d49466;
   display: none;
 }
@@ -66,7 +70,27 @@ a {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .navbar_logo {
+    display: flex;
+    position: relative;
+  }
+  .navbar_logo i {
+    position: absolute;
+  }
+  .navbar_logo_name {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 19px 0 19px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .navbar_logo_name a {
+    margin: 0 16px 0 0;
+  }
+  .navbar_logo_title {
+    display: none;
+  }
   .navbar_menu {
     display: none;
     flex-direction: column;
