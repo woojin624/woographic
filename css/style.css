@@ -3,6 +3,7 @@
   --background-color: #263343;
   --accent-color: #d49466;
 }
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -63,6 +64,37 @@ a {
   color: #d49466;
   display: none;
 }
+.main {
+  display: block;
+  font-size: 75px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.main_hello {
+  display: flex;
+  justify-content: flex-start;
+  margin: 100px 30px 50px 30px;
+}
+.main_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 30px;
+}
+.main_rec {
+  width: 450px;
+  height: 85px;
+  border: 4px solid black;
+  margin: 50px 20px;
+}
+.main_dev {
+  margin: 50px 20px;
+}
+.main_woojin {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50px 30px;
+}
 
 /* ------------------모바일 반응형--------------------- */
 @media screen and (max-width: 768px) {
@@ -114,5 +146,37 @@ a {
   .navbar_menu.active,
   .navbar_icons.active {
     display: flex;
+  }
+  .main {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .main_hello {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px 30px 0px;
+  }
+  .main_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px;
+  }
+  .main_rec {
+    width: 360px;
+    height: 60px;
+    border: 4px solid black;
+    margin: 20px 0px;
+  }
+  .main_dev {
+    margin: 20px 0px;
+  }
+  .main_woojin {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
   }
 }
