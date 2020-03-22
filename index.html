@@ -3,56 +3,1824 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <title>Woographic</title>
+    <title>오버워치</title>
     <script
-      src="https://kit.fontawesome.com/69d78cb2de.js"
+      src="https://kit.fontawesome.com/2d323a629b.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main2.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/videocontrol.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar_logo">
-        <i>
-          <img
-            style="width: 60px; margin: 6px 6px 0 0;"
-            src="images/WOOOp.png"
-            alt="로고"
-          />
-        </i>
-        <a class="navbar_logo_title" href="index.html">Woographic</a>
-        <div class="navbar_logo_name">
-          <a href="index.html">Woographic</a>
+    <header class="g_nav">
+      <nav>
+        <ul>
+          <li>
+            <img
+              src="images/blizzard-transparent-logo-5.png"
+              alt="blizzard-transparent-logo-5"
+            />
+          </li>
+          <li>
+            GAMES<i
+              style="margin-left: 5px; font-size: 20px;"
+              class="fas fa-caret-down"
+            ></i>
+          </li>
+          <li>EVENT</li>
+          <li>NEWS</li>
+        </ul>
+        <ul>
+          <li>고객지원</li>
+          <li>내 계정</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mobile_nav">
+      <div class="mobile_nav_icon">
+        <div><i class="fas fa-bars"></i></div>
+        <div><img src="images/logo_mobile_grey.png" alt="" /></div>
+        <div><i class="far fa-user"></i></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main_mask">
+        <div>
+          <div class="button_cover" id="vplay">
+            <button><i class="fas fa-play"></i></button>
+            <p>재생</p>
+          </div>
+          <div class="button_cover" id="vpause">
+            <button><i class="fas fa-pause"></i></button>
+            <p>일시정지</p>
+          </div>
+        </div>
+        <video
+          src="media/Overwatch_video.mp4"
+          id="myvideo"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="main_nav">
+          <div class="main_nav_close">
+            <div class="mnc">
+              <ul>
+                <li style="margin-right: 25px;">
+                  <img src="images/logo_big.png" alt="logo_big" />
+                </li>
+                <li>게임</li>
+                <li>영웅</li>
+                <li>이벤트</li>
+                <li>자료실</li>
+                <li>새소식</li>
+                <li>E스포츠</li>
+                <li>커뮤니티</li>
+              </ul>
+              <ul>
+                <li>로그인</li>
+                <li><div class="mnc_buy_box">구매하기</div></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main_nav_open">
+            <div class="mno_border">
+              <div class="mno">
+                <ul>
+                  <li>정보</li>
+                  <li>전장</li>
+                </ul>
+                <ul>
+                  <li>기록 보관소</li>
+                  <li>설날 이벤트</li>
+                  <li>환상의 겨울나라</li>
+                  <li>공포의 할로윈</li>
+                  <li>감사제</li>
+                </ul>
+                <ul>
+                  <li>영상</li>
+                  <li>스크린샷</li>
+                  <li>만화&단편소설</li>
+                  <li>원화</li>
+                </ul>
+                <ul>
+                  <li>새소식</li>
+                  <li>패치노트</li>
+                </ul>
+                <ul>
+                  <li>정보</li>
+                  <li>오버워치 리그</li>
+                  <li>오버워치 컨텐더스</li>
+                  <li>오픈 디비전 코리아</li>
+                </ul>
+                <ul>
+                  <li>플레이어 검색</li>
+                  <li>일상속의 영웅</li>
+                  <li>토론장</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main_logo">
+          <div class="main_logotext">
+            <img src="images/big_logo_text.png" alt="main_logo" />
+          </div>
+          <div class="main_pns">
+            <img src="images/pc nintendo ps4.png" alt="pc" />
+          </div>
+          <div>
+            <div style="margin-top: 40px;" class="buy_box">
+              구매하기
+            </div>
+          </div>
         </div>
       </div>
-      <ul class="navbar_menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="">Works</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Contacts</a></li>
-      </ul>
-      <ul class="navbar_icons">
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-facebook-f"></i></li>
-      </ul>
-      <a href="#" class="navbar_togleBtn">
-        <i class="fas fa-bars"></i>
-      </a>
-    </nav>
-    <div class="main">
-      <p class="main_hello">안녕하세요.</p>
-      <div class="main_center">
-        <div class="main_rec"></div>
-        <p class="main_dev">개발자</p>
-      </div>
-      <p class="main_woojin">장우진입니다.</p>
     </div>
+    <div class="newhero">
+      <div class="nh_wrap">
+        <div class="nh_ps">
+          <div class="nh_p1">
+            <p class="nh_new"><i>신규영웅</i></p>
+            <p class="nh_echo"><i>에코</i></p>
+          </div>
+          <div>
+            <p class="nh_now">지금 플레이 가능</p>
+          </div>
+          <div>
+            <p class="nh_31">
+              32번째 오버워치 영웅은 인류를 돕는 다양한 기능을 수행할 수 있도록
+              미나 랴오 박사가 만든 최첨단 다용도 적응성 로봇으로, 전투에 필요한
+              모든 장비를 갖추고 있습니다.
+            </p>
+          </div>
+          <div class="nh_p_mobile">
+            <p class="nh_page">영웅 페이지로 이동하기</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news_event">
+      <div class="ne_wrap">
+        <div class="news">
+          <div class="news_section">
+            <div class="news_title">
+              <p>새소식</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <hr />
+            <div class="news_list">
+              <ul class="news_content">
+                <li>워크샵 업데이트 - 2월 26일 패치 내용</li>
+                <li>
+                  제프 카플란과 마이클 하이버그가 체험 모드, 3공격, 아이스크림의
+                  경제학에 대해 이야기합니다.
+                </li>
+                <li>애쉬의 마르디 그라 챌린지로 파티에 참가하세요!</li>
+                <li>
+                  오버워치 리그 2020시즌 개막 주간을 맞이하세요! (2020/2/24
+                  업데이트)
+                </li>
+                <li>염소 브리기테 스킨을 지금 바로 구매하세요!</li>
+              </ul>
+              <ul class="news_date">
+                <li>2020.02.26</li>
+                <li>2020.02.22</li>
+                <li>2020.02.21</li>
+                <li>2020.02.07</li>
+                <li>2020.02.06</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event_section">
+            <div class="event_title">
+              <p>이벤트</p>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <hr />
+            <div class="event_list">
+              <div class="event_thumb">
+                <img src="images/event_img.png" alt="event_img" />
+                <div class="snow">
+                  <p>특별한 눈송이 이벤트가 시작됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="heros">
+      <div class="heros_wrap">
+        <div class="heros_title">
+          <p><i>오버워치의 다양한 영웅들</i></p>
+        </div>
+        <div class="heros_para">
+          <p>
+            시간을 늦추고, 전투 슈트를 입고 하늘로 솟아올라 포화 공격을
+            쏟아붓거나 초강력 햄스터 볼 파일럿이 되어 보십시오.<br />오버워치에는
+            다양한 능력을 가진 개성 넘치는 영웅들이 있습니다.
+          </p>
+        </div>
+        <div class="heros_main">
+          <!-- <div class="heros_main_change">
+            <div class="hmc_hero hmc_1">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>D.VA</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/dva/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_2">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>아나</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    새로운 세대를 지키기 위해 수년간의 은둔 생활에서 돌아온
+                    베테랑 오버워치 요원
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/ana/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_3">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>애쉬</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    미국 남서부를 뒤흔들고 있는 악명높은 데드락 갱단의 두목
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/ashe/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_4">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>바피스트</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    실험적인 치유 장비들로 무장한 최정예 전투 의무병
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/baptiste/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_5">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>바스티온</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    자연에 매료되어 전 세계를 모험하지만 인간을 경계하는 변신
+                    로봇
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/bastion/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_6">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>브리기테</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    도움이 필요한 자들을 위해 모험 떠난 용사
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/brigitte/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_7">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>둠피스트</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    지능과 카리스마, 잔혹한 무력을 동원해 더욱 강한 세계를
+                    건설하려는 책략가
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/doomfist/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_8">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>에코</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    최첨단 과학의 집약체라 할 수 있는, 끊임없이 진화하고
+                    적응하도록 프로그래밍된 인공 지능
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/echo/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_9">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>겐지</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    기계가 되어버린 몸을 받아들여 내면의 평화를 찾은 강력한
+                    전사이자 사이보그 닌자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/genji/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_10">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>한조</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    무시무시한 궁수이자 타의 추종을 불허하는 암살자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/hanzo/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_11">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>정크랫</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    폭발물에 집착하며 혼돈과 파괴를 불어오기 위해 살아가는
+                    미치광이
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/junkrat/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_12">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>루시우</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    자신의 음악과 행동으로 사회를 변화시키기 위해 싸우는
+                    세계적인 유명인사
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/lucio/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_13">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>맥크리</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    자신만의 방식으로 정의를 실현하는 총잡이 무법자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/mccree/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_14">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>메이</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    자연을 보존하기 위해 싸우는 기후학자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/mei/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_15">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>메르시</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    수호천사, 발군의 치유사, 천재적인 의료 과학자, 열성적인
+                    평화주의자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/mercy/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_16">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>모이라</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    윤리에 구애받지 않고 과학적인 발견을 추구하는 명석한
+                    유전학자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/moira/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_17">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>오리사</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    눔바니의 시민들을 지키기 위해 만들어진 평화수호자 로봇
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/orisa/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_18">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>파라</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    실험용 랩토라 전투 슈트를 착용하고 공중을 지배하는 충직한
+                    군인
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/pharah/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_19">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>리퍼</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    예전 오버워치 요원들을 사냥하는 냉혹한 살인마 용병
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/reaper/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_20">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>라인하르트</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    용맹, 정의, 용기라는 기사도의 미덕을 따르는 노년의 용사
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/reinhardt/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_21">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>로드호그</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    초인적인 힘과 잔혹함, 파괴적인 성향으로 악명이 자자한 살인마
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/roadhog/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_22">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>시그마</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    궤도 실험 중에 일어난 불의의 사고로 살아 있는 무기가
+                    되어버린 별난 천체물리학자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/sigma/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_23">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>솔져: 76</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    오버워치를 몰락으로 이끈 자들을 심판하기 위해 싸우는 무법자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/soldier-76/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_24">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>솜브라</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    비밀과 그 이면의 권력을 찾아 헤매는 악명 높은 해커
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/sombra/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_25">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>시메트라</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    경화경으로 이루어진 구조물을 창조해 자신만의 완벽한 사회를
+                    구축하려는 광축가
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/symmetra/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_26">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>토르비욘</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    전장에서 무기를 제련하여 싸우는 천재 기술자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/torbjorn/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_27">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>트레이서</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    예전 오버워치 요원이자 시간을 넘나드는 모험가, 정의의 편에서
+                    싸우는 영웅
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/tracer/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_28">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>위도우메이커</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    침착하고, 단호하며 아무 감정이나 죄책감도 없는 최고의 암살자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/widowmaker/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_29">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>윈스턴</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    극도로 지적인 유전자 조작 고릴라이자 인류의 잠재력을 믿는
+                    과학자
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/winston/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_30">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>레킹볼</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    구르는 로봇을 조종하는 달 출신의 유전자 조작 햄스터
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img
+                  src="images/heros/wrecking-ball/full-portrait.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_31">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>자리야</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    세계에서 가장 강인한 여성 중 하나로 조국을 지키기 위해
+                    자신의 영광을 포기한 영웅
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/zarya/full-portrait.png" alt="" />
+              </div>
+            </div>
+            <div class="hmc_hero hmc_32">
+              <div class="hmc_para">
+                <div class="hmc_name">
+                  <p><i>젠야타</i></p>
+                </div>
+                <div class="hmc_con">
+                  <p>
+                    정신적 깨달음을 얻기 위해 전 세계를 방랑하는 옴닉 수도사
+                  </p>
+                </div>
+                <div class="hmc_arrow">
+                  <img src="images/half_arrow.png" alt="" />
+                </div>
+              </div>
+              <div class="hmc_img">
+                <img src="images/heros/zenyatta/full-portrait.png" alt="" />
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="hero_thumbs">
+          <ul>
+            <div class="hero_name active">
+              <li class="hero_li">
+                <img src="images/heros/dva/icon-portrait.png" alt="" />
+              </li>
+              <p>D.Va</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_1">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>D.VA</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/dva/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_2">
+              <li class="hero_li">
+                <img src="images/heros/ana/icon-portrait.png" alt="" />
+              </li>
+              <p>아나</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_2">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>아나</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        새로운 세대를 지키기 위해 수년간의 은둔 생활에서 돌아온
+                        베테랑 오버워치 요원
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/ana/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_3">
+              <li class="hero_li">
+                <img src="images/heros/ashe/icon-portrait.png" alt="" />
+              </li>
+              <p>애쉬</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_3"></div>
+                <div class="hmc_para">
+                  <div class="hmc_name">
+                    <p><i>애쉬</i></p>
+                  </div>
+                  <div class="hmc_con">
+                    <p>
+                      미국 남서부를 뒤흔들고 있는 악명높은 데드락 갱단의 두목
+                    </p>
+                  </div>
+                  <div class="hmc_arrow">
+                    <img src="images/half_arrow.png" alt="" />
+                  </div>
+                </div>
+                <div class="hmc_img">
+                  <img src="images/heros/ashe/full-portrait.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_4">
+              <li class="hero_li">
+                <img src="images/heros/baptiste/icon-portrait.png" alt="" />
+              </li>
+              <p>바티스트</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_4">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>바피스트</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        실험적인 치유 장비들로 무장한 최정예 전투 의무병
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/baptiste/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_5">
+              <li class="hero_li">
+                <img src="images/heros/bastion/icon-portrait.png" alt="" />
+              </li>
+              <p>바스티온</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_5">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>바스티온</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        자연에 매료되어 전 세계를 모험하지만 인간을 경계하는
+                        변신 로봇
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/bastion/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_6">
+              <li class="hero_li">
+                <img src="images/heros/brigitte/icon-portrait.png" alt="" />
+              </li>
+              <p>브리기테</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_6">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>브리기테</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        도움이 필요한 자들을 위해 모험 떠난 용사
+                        <br />
+                        <br />
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/brigitte/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_7">
+              <li class="hero_li">
+                <img src="images/heros/doomfist/icon-portrait.png" alt="" />
+              </li>
+              <p>둠피스트</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_7">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>둠피스트</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        지능과 카리스마, 잔혹한 무력을 동원해 더욱 강한 세계를
+                        건설하려는 책략가
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/doomfist/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_8">
+              <li class="hero_li">
+                <img src="images/heros/echo/icon-portrait.png" alt="" />
+              </li>
+              <p>에코</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_8">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>에코</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        최첨단 과학의 집약체라 할 수 있는, 끊임없이 진화하고
+                        적응하도록 프로그래밍된 인공 지능
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/echo/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_9">
+              <li class="hero_li">
+                <img src="images/heros/genji/icon-portrait.png" alt="" />
+              </li>
+              <p>겐지</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_9">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>겐지</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        기계가 되어버린 몸을 받아들여 내면의 평화를 찾은 강력한
+                        전사이자 사이보그 닌자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/genji/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_10">
+              <li class="hero_li">
+                <img src="images/heros/hanzo/icon-portrait.png" alt="" />
+              </li>
+              <p>한조</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_10">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>한조</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        무시무시한 궁수이자 타의 추종을 불허하는 암살자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/hanzo/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_11">
+              <li class="hero_li">
+                <img src="images/heros/junkrat/icon-portrait.png" alt="" />
+              </li>
+              <p>정크랫</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_11">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>정크랫</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        폭발물에 집착하며 혼돈과 파괴를 불어오기 위해 살아가는
+                        미치광이
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/junkrat/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_12">
+              <li class="hero_li">
+                <img src="images/heros/lucio/icon-portrait.png" alt="" />
+              </li>
+              <p>루시우</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_12">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>루시우</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        자신의 음악과 행동으로 사회를 변화시키기 위해 싸우는
+                        세계적인 유명인사
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/lucio/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_13">
+              <li class="hero_li">
+                <img src="images/heros/mccree/icon-portrait.png" alt="" />
+              </li>
+              <p>맥크리</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_13">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>맥크리</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        자신만의 방식으로 정의를 실현하는 총잡이 무법자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/mccree/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_14">
+              <li class="hero_li">
+                <img src="images/heros/mei/icon-portrait.png" alt="" />
+              </li>
+              <p>메이</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_14">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>메이</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        자연을 보존하기 위해 싸우는 기후학자
+                        <br /><br />
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/mei/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_15">
+              <li class="hero_li">
+                <img src="images/heros/mercy/icon-portrait.png" alt="" />
+              </li>
+              <p>메르시</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_15">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>메르시</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        수호천사, 발군의 치유사, 천재적인 의료 과학자, 열성적인
+                        평화주의자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/mercy/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_16">
+              <li class="hero_li">
+                <img src="images/heros/moira/icon-portrait.png" alt="" />
+              </li>
+              <p>모이라</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_16">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>모이라</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        윤리에 구애받지 않고 과학적인 발견을 추구하는 명석한
+                        유전학자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/moira/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_17">
+              <li class="hero_li">
+                <img src="images/heros/orisa/icon-portrait.png" alt="" />
+              </li>
+              <p>오리사</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_17">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>오리사</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        눔바니의 시민들을 지키기 위해 만들어진 평화수호자 로봇
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/orisa/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_18">
+              <li class="hero_li">
+                <img src="images/heros/pharah/icon-portrait.png" alt="" />
+              </li>
+              <p>파라</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_18">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>파라</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        실험용 랩토라 전투 슈트를 착용하고 공중을 지배하는
+                        충직한 군인
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/pharah/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_19">
+              <li class="hero_li">
+                <img src="images/heros/reaper/icon-portrait.png" alt="" />
+              </li>
+              <p>리퍼</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_19">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>리퍼</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        예전 오버워치 요원들을 사냥하는 냉혹한 살인마 용병
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/reaper/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_20">
+              <li class="hero_li">
+                <img src="images/heros/reinhardt/icon-portrait.png" alt="" />
+              </li>
+              <p>라인하르트</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_20">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>라인하르트</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        용맹, 정의, 용기라는 기사도의 미덕을 따르는 노년의 용사
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img
+                      src="images/heros/reinhardt/full-portrait.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_21">
+              <li class="hero_li">
+                <img src="images/heros/roadhog/icon-portrait.png" alt="" />
+              </li>
+              <p>로드호그</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_21">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>로드호그</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        초인적인 힘과 잔혹함, 파괴적인 성향으로 악명이 자자한
+                        살인마
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/roadhog/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_22">
+              <li class="hero_li">
+                <img src="images/heros/sigma/icon-portrait.png" alt="" />
+              </li>
+              <p>시그마</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_22">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>시그마</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        궤도 실험 중에 일어난 불의의 사고로 살아 있는 무기가
+                        되어버린 별난 천체물리학자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/sigma/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_23">
+              <li class="hero_li">
+                <img src="images/heros/soldier-76/icon-portrait.png" alt="" />
+              </li>
+              <p>솔져: 76</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_23">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>솔져: 76</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        오버워치를 몰락으로 이끈 자들을 심판하기 위해 싸우는
+                        무법자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img
+                      src="images/heros/soldier-76/full-portrait.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_24">
+              <li class="hero_li">
+                <img src="images/heros/sombra/icon-portrait.png" alt="" />
+              </li>
+              <p>솜브라</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_24">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>솜브라</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        비밀과 그 이면의 권력을 찾아 헤매는 악명 높은 해커
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/sombra/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_25">
+              <li class="hero_li">
+                <img src="images/heros/symmetra/icon-portrait.png" alt="" />
+              </li>
+              <p>시메트라</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_25">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>시메트라</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        경화경으로 이루어진 구조물을 창조해 자신만의 완벽한
+                        사회를 구축하려는 광축가
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/symmetra/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_26">
+              <li class="hero_li">
+                <img src="images/heros/torbjorn/icon-portrait.png" alt="" />
+              </li>
+              <p>토르비욘</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_26">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>토르비욘</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        전장에서 무기를 제련하여 싸우는 천재 기술자
+                        <br /><br />
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/torbjorn/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_27">
+              <li class="hero_li">
+                <img src="images/heros/tracer/icon-portrait.png" alt="" />
+              </li>
+              <p>트레이서</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_27">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>트레이서</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        예전 오버워치 요원이자 시간을 넘나드는 모험가, 정의의
+                        편에서 싸우는 영웅
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/tracer/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_28">
+              <li class="hero_li">
+                <img src="images/heros/widowmaker/icon-portrait.png" alt="" />
+              </li>
+              <p>위도우메이커</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_28">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>위도우메이커</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        침착하고, 단호하며 아무 감정이나 죄책감도 없는 최고의
+                        암살자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img
+                      src="images/heros/widowmaker/full-portrait.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_29">
+              <li class="hero_li">
+                <img src="images/heros/winston/icon-portrait.png" alt="" />
+              </li>
+              <p>윈스턴</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_29">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>윈스턴</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        극도로 지적인 유전자 조작 고릴라이자 인류의 잠재력을
+                        믿는 과학자
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/winston/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_30">
+              <li class="hero_li">
+                <img
+                  src="images/heros/wrecking-ball/icon-portrait.png"
+                  alt=""
+                />
+              </li>
+              <p>레킹볼</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_30">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>레킹볼</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        구르는 로봇을 조종하는 달 출신의 유전자 조작 햄스터
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img
+                      src="images/heros/wrecking-ball/full-portrait.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_31">
+              <li class="hero_li">
+                <img src="images/heros/zarya/icon-portrait.png" alt="" />
+              </li>
+              <p>자리야</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_31">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>자리야</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        세계에서 가장 강인한 여성 중 하나로 조국을 지키기 위해
+                        자신의 영광을 포기한 영웅
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/zarya/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero_name hmc_32">
+              <li class="hero_li">
+                <img src="images/heros/zenyatta/icon-portrait.png" alt="" />
+              </li>
+              <p>젠야타</p>
+              <div class="heros_main2">
+                <div class="hmc_hero hmc_32">
+                  <div class="hmc_para">
+                    <div class="hmc_name">
+                      <p><i>젠야타</i></p>
+                    </div>
+                    <div class="hmc_con">
+                      <p>
+                        정신적 깨달음을 얻기 위해 전 세계를 방랑하는 옴닉 수도사
+                      </p>
+                    </div>
+                    <div class="hmc_arrow">
+                      <img src="images/half_arrow.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="hmc_img">
+                    <img src="images/heros/zenyatta/full-portrait.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="buy">
+      <div class="buy_wrap">
+        <div class="buy_frame">
+          <div class="buy_pack">
+            <img src="images/overwatch_pack.png" alt="" />
+            <div class="buy_start">
+              <p class="buy_st">시작하기</p>
+              <p class="buy_future">
+                미래의 전장에서 궁극의 팀 기반<br />슈팅 게임을 플레이하십시오.
+              </p>
+              <p class="buy_buybox">구매하기</p>
+            </div>
+          </div>
+          <img src="images/pc nintendo ps4_small.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="social">
+      <div class="social_wrap">
+        <div class="social_icon">
+          <div class="social_circle">
+            <img src="images/icon_facebook.png" alt="" />
+          </div>
+        </div>
+        <div class="social_icon">
+          <div class="social_circle">
+            <img src="images/icon_twitter.png" alt="" />
+          </div>
+        </div>
+        <div class="social_icon">
+          <div class="social_circle">
+            <img src="images/icon_youtube.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrap">
+        <div class="footer_top">
+          <div>
+            <img src="images/blizzard-transparent-logo-1 (1).png" alt="" />
+          </div>
+          <div class="footer_para">
+            <div class="fp_line1">
+              <ul>
+                <li>인재 채용</li>
+                <li>|</li>
+                <li>회사 소개</li>
+                <li>|</li>
+                <li>고객지원</li>
+                <li>|</li>
+                <li>보도자료</li>
+                <li>|</li>
+                <li>API</li>
+                <li>|</li>
+                <li>블리자드 PC방</li>
+              </ul>
+            </div>
+            <div class="fp_line2">
+              <p>
+                ©2020 BLIZZARD ENTERTAINMENT, INC. 모든 권리는 BLIZZARD
+                ENTERTAINMENT에 있습니다.
+              </p>
+              <p>
+                여기서 언급된 다른 모든
+                <span style="color: #f79c15;">상표</span>는 각 소유권자들의
+                자산입니다.
+              </p>
+              <ul>
+                <li style="font-weight: 600;">개인정보 처리방침</li>
+                <li>|</li>
+                <li>법률 관련 문서</li>
+                <li>|</li>
+                <li>이용 약관</li>
+              </ul>
+            </div>
+            <div class="fp_line3">
+              <p>블리자드 엔터테인먼트 유한 회사</p>
+              <p>주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층</p>
+              <p>
+                대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일:
+                websupport@blizzard.co.kr
+              </p>
+              <p>
+                사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호:
+                강남-6017호 | 사업자정보확인
+              </p>
+              <p>
+                대표이사: 자렛 알렌 브랙, 전동진 | 개인정보 보호책임자: 전동진
+                대표이사
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_wrap2">
+        <div class="footer_bottom">
+          <div class="footer_blue">
+            <div class="fb1">
+              <img src="images/12short.png" alt="" />
+              <img src="images/violence.png" alt="" />
+            </div>
+            <div class="fb2">
+              <img src="images/overwatch12long.png" alt="" />
+            </div>
+          </div>
+          <div class="footer_yellow">
+            <div class="fy1">
+              <img src="images/15short.png" alt="" />
+              <img src="images/violence.png" alt="" />
+            </div>
+            <div class="fy2">
+              <img src="images/overwatch15long.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
